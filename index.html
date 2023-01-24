@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+    <!-- tailwind-cdn  -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome  -->
@@ -13,10 +18,10 @@
 <body>
     <header>
         <!-- Navbar  -->
-        <div class="container md:mx-auto md:px-32 mt-5 lg:flex items-center justify-between">
+        <div class="container md:mx-auto md:px-32 p-5 mt-5 lg:flex items-center justify-between">
             <div class="flex items-center">
                 <img src="./images/business.png" alt="">
-                <h1 class="ml-2 text-4xl font-bold">Justice</h1>
+                <h1 class="Garamond ml-2 text-4xl font-bold">Justice</h1>
             </div>
             <div>
                 <ul class="lg:flex gap-x-10 mt-5 mb-5">
@@ -98,7 +103,7 @@
             <div class="container lg:w-full w-5/6 h-[550px] bg-[url('./images/banner.png')] bg-cover rounded-lg">
                 <div class="relative top-36">
                     <div class="text-white font-bold text-center">
-                        <h1 class=" md:text-7xl">We Provide Effective <br> Legal Solutions</h1>
+                        <h1 class=" Garamond md:text-7xl">We Provide Effective <br> Legal Solutions</h1>
                         <p class="text-sm mt-5 mb-5 font-bold text-gray-200">There are many variations of passages of
                             Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by
                             injected humour.</p>
@@ -123,7 +128,8 @@
                         have suffered alteration in some form, by injected humour.</p>
                     <img class="md:mx-auto" src="./images/Frame.png" alt="">
                 </div>
-                <div class="mt-24 md:text-center bg-gradient-to-b p-1 from-[#F3F3F3] to-[rgba(243, 243, 243, 0) 100%);]">
+                <div
+                    class="mt-24 md:text-center bg-gradient-to-b p-1 from-[#F3F3F3] to-[rgba(243, 243, 243, 0) 100%);]">
                     <img class="md:mx-auto" src="./images/child.png" alt="">
                     <h1 class="text-2xl font-bold mt-5 mb-2">Child Support</h1>
                     <p class=" mb-5">There are many variations of passages of Lorem Ipsum available, but the majority
@@ -175,26 +181,35 @@
                     <!-- Carousel wrapper -->
                     <div class=" mt-16 relative h-56 overflow-hidden rounded-lg md:h-96">
                         <!-- Item 1 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <span
-                                class="absolute text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-3xl dark:text-gray-800">First
-                                Slide</span>
-
-                            <img src="./images/slider-1.jpg"
-                                class="absolute block md:w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                alt="...">
+                        <div class="hidden duration-700 ease-in-out bg-[url('./images/slider-1.jpg')] bg-cover"
+                            data-carousel-item>
+                            <div>
+                                <img class="mx-auto mt-20" src="./images/client.png" alt="" class="">
+                                <h1
+                                    class="absolute text-center text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-3xl dark:text-gray-800">
+                                    Nura Fatehi
+                                    <p class="text-lg font-bold text-center">UIX Designer</p>
+                                    <p class="text-xs">Contrary to popular belief, Lorem Ipsum is not simply random
+                                        text. It has roots in a piece of classical Latin literature from 45 BC, making
+                                        it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
+                                        College in Virginia, looked up one of the more obscure Latin words, consectetur.
+                                    </p>
+                                </h1>
+                            </div>
                         </div>
                         <!-- Item 2 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="./images/slider-2.jpg"
-                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                alt="...">
+                        <div class="hidden duration-700 ease-in-out bg-[url('./images/slider-2.jpg')] bg-cover"
+                            data-carousel-item>
+                            <span
+                                class="absolute text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-3xl dark:text-gray-800">
+                                I CAN WORK HARD</span>
                         </div>
                         <!-- Item 3 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="/images/slider-3.jpg"
-                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                alt="...">
+                        <div class="hidden duration-700 ease-in-out bg-[url('./images/slider-3.jpg')] bg-cover"
+                            data-carousel-item>
+                            <span
+                                class="absolute text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-3xl dark:text-gray-800">THIS
+                                IS NISSAN</span>
                         </div>
                     </div>
                     <!-- Slider indicators -->
@@ -246,14 +261,15 @@
                 <h1 class="text-4xl font-bold mb-5">Frequently Asked Any Questions</h1>
                 <p class="mb-28">There are many variations of passages of Lorem Ipsum available, but the majority have
                     <br> suffered
-                    alteration in some form, by injected humour.</p>
+                    alteration in some form, by injected humour.
+                </p>
             </div>
 
             <div class="md:flex gap-x-8 items-center justify-between">
                 <div>
                     <div id="accordion-collapse" data-accordion="collapse">
                         <ol class="list-decimal">
-                            <li>
+                            <li class="mb-5">
                                 <h2 id="accordion-collapse-heading-1">
                                     <button type="button"
                                         class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
@@ -284,7 +300,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="mb-5">
                                 <h2 id="accordion-collapse-heading-2">
                                     <button type="button"
                                         class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
@@ -308,7 +324,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="mb-5">
                                 <h2 id="accordion-collapse-heading-3">
                                     <button type="button"
                                         class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
@@ -341,8 +357,7 @@
                                         class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
                                         data-accordion-target="#accordion-collapse-body-4" aria-expanded="false"
                                         aria-controls="accordion-collapse-body-4">
-                                        <span class="font-xl font-bold">What is the Css box model and how does it
-                                            work?</span>
+                                        <span class="font-xl font-bold">What is Semantic Tag?</span>
                                         <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor"
                                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd"
@@ -354,11 +369,9 @@
                                 <div id="accordion-collapse-body-4" class="hidden"
                                     aria-labelledby="accordion-collapse-heading-4">
                                     <div class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700">
-                                        <p class=" font-bold mb-2 text-gray-500 dark:text-gray-400">A box in CSS
-                                            consists of a content area, which is where any text, images, or other HTML
-                                            elements are displayed. This is optionally surrounded by padding, a border,
-                                            and a margin, on one or more sides. The box model describes how these
-                                            elements work together to create a box as displayed by CSS.</p>
+                                        <p class=" font-bold mb-2 text-gray-500 dark:text-gray-400">Semantic Tag is an
+                                            understandable tag that we can say to see which tag it is. This Tag is
+                                            totally understandable.</p>
                                     </div>
                                 </div>
                             </li>
@@ -376,11 +389,13 @@
             <form>
                 <div class="md:text-center">
                     <h1 class="text-4xl font-bold mb-2">Contact With Us</h1>
-                    <p class="mb-20">There are many variations of passages of Lorem Ipsum available, but the majority have 
-                       <br> suffered alteration in some form, by injected humour.</p>
+                    <p class="mb-20">There are many variations of passages of Lorem Ipsum available, but the majority
+                        have
+                        <br> suffered alteration in some form, by injected humour.
+                    </p>
                 </div>
-                <div class="lg:flex md:justify-between md:items-center">
-                    <div class=" md:grid grid-cols-2 md:gap-y-10 gap-x-10 p-5 bg-[#F3F3F3]">
+                <div class="lg:flex md:justify-center md:gap-10 md:items-center">
+                    <div class=" md:grid grid-cols-2 md:gap-y-10 p-5 mb-5  bg-[#F3F3F3]">
                         <div class="md:text-center border">
                             <img class="md:mx-auto mb-5 w-20" src="./images/address.png" alt="">
                             <h2 class="text-xl font-bold mb-4">Address</h2>
@@ -406,14 +421,16 @@
                                 Sunday: 9AM to 1 PM</p>
                         </div>
                     </div>
-                    <div class="mt-5">
-                        <input class="md:w-96 border-none mb-3" type="text" placeholder="Your Name"><br>
-                        <input class="md:w-full border-none mb-3" type="text" placeholder="Your Email"><br>
-                        <input class="md:w-full border-none mb-3" type="text" placeholder="Subject"> <br>
-                        <input class="md:w-full border-none h-52 mb-3" type="text" placeholder="Your Message"> <br>
+                    <div>
+                        <input class="md:w-96 border-none mb-4 bg-[#F3F3F3]" type="text" placeholder="Your Name"><br>
+                        <input class="md:w-full border-none mb-4 bg-[#F3F3F3] " type="text"
+                            placeholder="Your Email"><br>
+                        <input class="md:w-full border-none mb-6 bg-[#F3F3F3] " type="text" placeholder="Subject"> <br>
+                        <input class="md:w-full border-none h-64 mb-3 bg-[#F3F3F3] " type="text"
+                            placeholder="Your Message"> <br>
                         <button class="mb:w-full border-none py-2  px-3 rounded-lg bg-[#B68C5A]">Send Message</button>
                     </div>
-                </div>   
+                </div>
             </form>
         </section>
     </main>
@@ -425,9 +442,12 @@
             <div>
                 <div class="flex items-center gap-x-5 py-10">
                     <div><img src="./images/business.png" alt=""></div>
-                    <div><h1 class="text-4xl font-bold">Justice</h1></div>
+                    <div>
+                        <h1 class="text-4xl font-bold">Justice</h1>
+                    </div>
                 </div>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humour.</p>
             </div>
             <div>
                 <h1 class=" pt-14 pb-14 text-4xl md:text-center">Useful Links</h1>
@@ -440,17 +460,20 @@
             <div>
                 <h1 class=" pt-14 pb-14 text-4xl md:text-center">Contact Now</h1>
                 <p class="md:text-center"><a href="">555 4th 5t NW, Washington <br>
-                    DC 20530, United States</a></p>
+                        DC 20530, United States</a></p>
                 <p class="md:text-center"><a href="">+88 01750 000 000 <br>
-                    +88 01750 000 000</a></p>
+                        +88 01750 000 000</a></p>
                 <p class="md:text-center md:mb-28"><a href="">info@gmail.com <br>
-                    info@gmail.com</a></p>
+                        info@gmail.com</a></p>
             </div>
             <div>
                 <h1 class=" pt-14 pb-14 text-4xl md:text-center">Subscribe</h1>
-                <p class="md:text-center mb-2"><a href="">Subscribe for our latest & <br> Articles. We Won’t Give You <br> Spam Mails</a></p>
-                <input  class="md:w-full mb-10 border-none rounded-md text-center" type="text" placeholder="Email Address">
-                <button class="md:absolute right-[139px] md:right-6 w-14 rounded-md bg-[#B68C5A] py-2"><i class="fa-regular fa-paper-plane"></i></button>
+                <p class="md:text-center mb-2"><a href="">Subscribe for our latest & <br> Articles. We Won’t Give You
+                        <br> Spam Mails</a></p>
+                <input class="md:w-full mb-10 border-none rounded-md text-center" type="text"
+                    placeholder="Email Address">
+                <button class="md:absolute right-[139px] md:right-6 w-14 rounded-md bg-[#B68C5A] py-2"><i
+                        class="fa-regular fa-paper-plane"></i></button>
             </div>
         </div>
 
